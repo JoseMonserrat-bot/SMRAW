@@ -1,1 +1,39 @@
- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio 16</title>
+        <style>
+            form {margin: 0 auto; width: 300px; padding: 1em;}
+            label {display: inline-block; width: 90px; text-align: right;} 
+            input,
+            textarea {font: 1em sans-serif; width: 150px;
+                box-sizing: border-box; border: 1px solid #999;}
+            input:focus, 
+            textarea {vertical-align: top; height: 5em;}
+            .button {padding-left: 90px;}
+            button {margin-left: .5em;}
+        </style>
+    </head>
+    <body>
+        <form action="/my-handling-form-page" method="post">
+            <fieldset>
+                <legend>Contact</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name"/>
+                </p>
+                <p>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email"/>
+                </p>
+                <p>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </p>
+                <p class="button">
+                    <button type="submit">Send your message</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
