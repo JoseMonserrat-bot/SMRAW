@@ -2,8 +2,108 @@
 <html>
     <head>
         <title>Ejercicio 18</title>
+        <style>
+            form {margin: 0 auto; width: 500px; padding: 1em;}
+            label {display: inline-block; width: 90px; text-align: right;} 
+            input,
+            textarea {font: 1em sans-serif; width: 300px;
+                box-sizing: border-box; border: 1px solid #999;}
+            textarea {vertical-align: top; height: 5em;}
+        </style>
     </head>
     <body>
-        
+        <form action="/my-handling-form-page" method="post">
+           <fieldset>
+               <legend>Configurar tu pizza:</legend>
+               <p>
+                   <label for="masa">Tipo de masa:</label>
+                   <select id="masa" name="masa">
+                       <option value="Fina">Fina</option>
+                       <option value="Gorda">Gorda</option>
+                   </select>
+               </p>
+               <p>
+                   <label for="salsa">Tipo de salsa:</label>
+                   <select id="salsa" name="salsa">
+                       <option value="Tomate">Tomate</option>
+                       <option value="Barbacoa">Barbacoa</option>
+                       <option value="Carbonara">Carbonara</option>
+                   </select>
+               </p>
+               <p>Queso:</p>
+               <p>
+                   <label for="Si">Si</label>
+                   <input type="radio" id="Si" name="Queso" value="Si">
+                    <label for="No">No</label>
+                   <input type="radio" id="No" name="Queso" value="No">
+               </p>
+               <p>Ingredientes:</p>
+               <p>
+                   <label for="Bacon">Bacon</label>
+                   <input type="checkbox" id="Bacon" value="Bacon">
+                   <label for="Pepperoni">Pepperoni</label>
+                   <input type="checkbox" id="Pepperoni" value="Pepperoni">
+                   <label for="Champiñones">Champiñones</label>
+                   <input type="checkbox" id="Champiñones" value="Champiñones">
+                   <label for="Aceitunas">Aceitunas</label>
+                   <input type="checkbox" id="Aceitunas" value="Aceitunas">
+                   <label for="Maiz">Maiz</label>
+                   <input type="checkbox" id="Maiz" value="Maiz">
+                   <label for="Pollo">Pollo</label>
+                   <input type="checkbox" id="Pollo" value="Pollo">
+                   <label for="Jamon">Jamon</label>
+                   <input type="checkbox" id="Jamon" value="Jamon">
+                   <label for="Cebolla">Cebolla</label>
+                   <input type="checkbox" id="Cebolla" value="Cebolla">
+                   <label for="Huevo">Huevo</label>
+                   <input type="checkbox" id="Huevo" value="Huevo">
+                   <label for="Atun">Atun</label>
+                   <input type="checkbox" id="Atun" value="Atun">
+               </p>
+               <p>
+                   <label for="Tamaño">Tamaño:</label>
+                   <select id="Tamaño" name="Tamaño">
+                       <option value="Pequeña">Pequeña</option>
+                       <option value="Mediana">Mediana</option>
+                       <option value="Familiar">Familiar</option>
+                   </select>
+               </p>
+           </fieldset>
+           <fieldset>
+               <legend>Datos de pago:</legend>
+               <p>
+                   <label>Número de cuenta:</label>
+                   <input type="number">
+               </p>
+               <p>
+                   <label>Mes de caducidad:</label>
+                   <input type="month">
+               </p>
+               <p>
+                   <label>Código de seguridad:</label>
+                   <input type="password">
+               </p>
+           </fieldset>
+           <fieldset>
+               <legend>Datos de entrega:</legend>
+               <p>
+                   <label>Dirección completa:</label>
+                   <textarea rows="10" cols="50"></textarea>
+               </p>
+               <p>
+                   <label>Observaciones:</label>
+                   <textarea rows="10" cols="50"></textarea>
+               </p>
+           </fieldset>
+           <fieldset>
+               <legend>Finalizar:</legend>
+               <p>
+                   <input type="reset">
+               </p>
+               <p>
+                   <input type="submit">
+               </p>
+           </fieldset>
+        </form> 
     </body>
 </html>
