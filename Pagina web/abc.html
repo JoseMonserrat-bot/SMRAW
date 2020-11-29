@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: navy;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+    
+footer {
+   position:-webkit-sticky;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#111;
+}
+</style>
+</head>
+<body>
+
+    <div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
+<ul class="topnav">
+  <li><a href="Pagina web.html">Home</a></li>
+  <li><a href="CV.html">CV</a></li>
+  <li><a href="mundo.html">Contact</a></li>
+  <li><a class="active" href="abc.html">Contact</a></li>
+  <li class="right"><a href="About.html">About</a></li>
+</ul>
+<div style="padding:0 16px;">
+  <h2>Responsive Topnav Example</h2>
+  <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+<footer>
+  Footer
+</footer>
+</body>
+</html>
