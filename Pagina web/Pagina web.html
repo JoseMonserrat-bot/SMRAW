@@ -2,15 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-html {
-  min-height: 100%;
-  position: relative;
-}
-    
+<style>   
 body {
     margin: 0;
-    margin-bottom: 40px
 }
 
 ul.Menu {
@@ -36,7 +30,7 @@ ul.Menu li a {
   text-decoration: none;
 }
 
-ul.Menu li.active {
+ul.Menu li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -47,7 +41,12 @@ ul.Menu li a.active {
 ul.Menu li.right {
     float: right;
 }
-    
+  
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}    
+
 footer {
   background-color: #333;
   position: relative;
