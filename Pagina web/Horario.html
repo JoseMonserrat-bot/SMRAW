@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+                        html { 
+                background: url(tierra.png) no-repeat center center fixed; 
+                background-size: cover;
+                font-family: fantasy;
+            }
+            body {
+                margin: 0;
+            }
+            
+            div.Cabecera {
+                margin: 10px;
+            }
+            
+            ul.Menu {
+                z-index:1;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+            }
+
+            ul.Menu li {
+                float: left;
+            }
+
+            ul.Menu li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            ul.Menu li a:hover:not(.active) {
+                background-color: #111;
+            }   
+
+            ul.Menu li a.active {
+                background-color: #127;
+            }
+
+            ul.Menu li.right {
+                float: right;
+            }
+  
+            @media screen and (max-width: 600px){
+                ul.Menu li.right, 
+                ul.Menu li {float: none;}
+            }    
+
+            footer {
+                background-color: #333;
+                position: -webkit-sticky;
+                position: sticky;
+                position: fixed;
+                width: 100%;
+                height: 205px;
+                color: white;
+                text-align: center;
+            }
+        
+            footer iframe {
+                float: right;
+                position: relative;
+                right: 5%;
+                top: 1%;
+            }
+            
+            div.información { 
+                float: left;
+                position: sticky;
+                left: 2%;
+                top: 40%;
+            }
+            
+            table {
+                float: none;
+                box-sizing: border-box;
+                width: 100%;
+                border: solid #127 10px;
+                padding: 5px;
+                color: #999;
+                background: #333;
+            }
+            
+            th, td {
+                border: 2px solid #127;
+            }
+            
+            div.Contenedor{
+                min-height: calc(100vh - 91px - 250px)
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="Cabecera" style="color: #127;">
+            <h2>Pagina web</h2>
+        </div>
+        <ul class="Menu">
+            <li><a href="Pagina web.html">Inicio</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a class="active" href="Horario.html">Horario</a></li>
+            <li><a href="Ies Villablanca.html">Ies Villablanca</a></li>
+            <li class="right"><a href="Imagenes.html">Imagenes</a></li>
+        </ul>
+        <br />
+        <div class="Contenedor">
+        <table>
+            <tr align=center>
+                <th></th>
+                <th>Lunse</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+            <tr align=center>
+                <th>15:30-16:25</th>
+                <td rowspan="2">A.W</td>
+                <td>Inglés</td>
+                <td rowspan="2">S.O.R</td>
+                <td rowspan="2">A.W</td>
+                <td rowspan="2">S.O.R</td>
+            </tr>
+            <tr align=center>
+                <th>16:25-17:20</th>
+                <td>Empresa</td>
+            </tr>
+            <tr align=center>
+                <th>17:20-18:15</th>
+                <td>S.I</td>
+                <td>S.O.R</td>
+                <td>Inglés</td>
+                <td>S.R</td>
+                <td>Empresa</td>
+            </tr>
+            <tr align=center>
+                <th>18:15-18:30</th>
+                <td colspan="5">RECREO</td>
+            </tr>
+            <tr align=center>
+                <th>18:30-19:25</th>
+                <td>S.I</td>
+                <td>S.O.R</td>
+                <td>Empresa</td>
+                <td>S.R</td>
+                <td>A.W</td>
+            </tr>
+            <tr align=center>
+                <th>19:25-21:15</th>
+                <td>S.O.R</td>
+                <td>S.R</td>
+                <td>S.R</td>
+                <td>S.I</td>
+                <td>S.R</td>
+            </tr>
+        </table>
+        </div>
+        <footer >
+            <div class=información>
+                <p>jose.monserrat.bermejo@gmail.com</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23927568.810651243!2d-10.197293056396207!3d42.93937752468156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd42255d3a247575%3A0xd8a0a40edf810cff!2sIES%20Villablanca%2C%20Calle%20de%20Villablanca%2C%20Madrid!3m2!1d40.406647899999996!2d-3.5998956!4m5!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest%2C%20Hungr%C3%ADa!3m2!1d47.497912!2d19.040235!5e0!3m2!1ses!2ses!4v1605802787799!5m2!1ses!2ses" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </footer>
+    </body>
+</html>
