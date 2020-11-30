@@ -4,7 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style> 
             html { 
-                background: url(marte.jpg) no-repeat center center fixed; 
+                background: url(tierra.png) no-repeat center center fixed; 
                 background-size: cover;
                 font-family: fantasy;
             }
@@ -12,7 +12,12 @@
                 margin: 0;
             }
             
+            div.Cabecera {
+                margin: 10px;
+            }
+            
             ul.Menu {
+                z-index:1;
                 list-style-type: none;
                 margin: 0;
                 padding: 0;
@@ -51,14 +56,12 @@
                 ul.Menu li.right, 
                 ul.Menu li {float: none;}
             }    
-
-
+            
             footer {
                 background-color: #333;
                 position: -webkit-sticky;
                 position: sticky;
                 position: fixed;
-                bottom: 0;
                 width: 100%;
                 height: 205px;
                 color: white;
@@ -68,7 +71,7 @@
             footer iframe {
                 float: right;
                 position: relative;
-                right: 2%;
+                right: 5%;
                 top: 1%;
             }
             
@@ -79,10 +82,19 @@
                 top: 40%;
             }
             
-            div h2 {
-                position: relative;
-                left: 5%;
+            div.CV{
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke: 1px black;
+                position: sticky;
+                margin: 2%;
+                left: 2%;
+                top: 10%;
             }
+            
+            div.Contenedor{
+                min-height: calc(100vh - 91px - 250px)
+            }
+            
         </style>
     </head>
     <body>
@@ -92,14 +104,37 @@
         <ul class="Menu">
             <li><a href="Pagina web.html">Inicio</a></li>
             <li><a class="active" href="CV.html">CV</a></li>
-            <li><a href="mundo.html">Contact</a></li>
-            <li><a href="abc.html">Contact</a></li>
-            <li class="right"><a href="About.html">Imagenes</a></li>
+            <li><a href="Horario.html">Horario</a></li>
+            <li><a href="Ies Villablanca.html">Ies Villablanca</a></li>
+            <li class="right"><a href="Imagenes.html">Imagenes</a></li>
         </ul>
-
+        <div class="Contenedor">
+        <div class="CV">
+        <h2><li>Datos:</li></h2>
+            <ul>
+                <dt>Nombre: Jose Monserrat Bermejo</dt>
+                <dt>Correo: jose.monserrat.bermejo@gmail.com</dt>  
+            </ul>
+        <h2><li>Formación:</li></h2>
+            <ul>
+                <dt>ESO</dt>
+            </ul>
+        <h2><li>Idiomas:</li></h2>
+            <ul>
+                <dt>Español</dt>
+                <dt>Ingles A2</dt>
+            </ul>
+        <h2><li>Datos de interes:</li></h2>
+            <ul>
+                <dt>Actualmente estudiando segundo año para la titulación de Sistemas Microinformáticos y Redes.</dt>
+                <br />
+                <dt>Sin experiencia laboral.</dt>
+            </ul>
+        </div>
+        </div>
         <footer >
             <div class=información>
-                <p>Jose Monserrat Bermejo</p>
+                <p>jose.monserrat.bermejo@gmail.com</p>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d23927568.810651243!2d-10.197293056396207!3d42.93937752468156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0xd42255d3a247575%3A0xd8a0a40edf810cff!2sIES%20Villablanca%2C%20Calle%20de%20Villablanca%2C%20Madrid!3m2!1d40.406647899999996!2d-3.5998956!4m5!1s0x4741c334d1d4cfc9%3A0x400c4290c1e1160!2sBudapest%2C%20Hungr%C3%ADa!3m2!1d47.497912!2d19.040235!5e0!3m2!1ses!2ses!4v1605802787799!5m2!1ses!2ses" width="400" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </footer>
